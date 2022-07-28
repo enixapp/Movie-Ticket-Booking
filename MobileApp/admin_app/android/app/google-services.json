@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1082483613575",
+    "project_id": "admin-app-f300b",
+    "storage_bucket": "admin-app-f300b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082483613575:android:6d1bb156f47225901abd22",
+        "android_client_info": {
+          "package_name": "jp.co.origon.adminapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1082483613575-s62an3ltoeskcapn1tlmo3d4pmgmrk1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFEwksgmElfomnUV9v2chMJZNGWc3Ign4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1082483613575-s62an3ltoeskcapn1tlmo3d4pmgmrk1p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1082483613575-tkksf2s87ip1bp63ma86p2hcsa53e4ng.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jp.co.origon.admin-app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

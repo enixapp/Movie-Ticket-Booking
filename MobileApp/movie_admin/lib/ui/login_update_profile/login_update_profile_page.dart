@@ -6,9 +6,9 @@ import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc_pattern/flutter_bloc_pattern.dart';
 import 'package:flutter_disposebag/flutter_disposebag.dart';
-import 'package:flutter_google_places/flutter_google_places.dart';
+// import 'package:flutter_google_places/flutter_google_places.dart';
 import 'package:flutter_provider/flutter_provider.dart';
-import 'package:google_maps_webservice/places.dart' hide Location;
+// import 'package:google_maps_webservice/places.dart' hide Location;
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart' as intl;
 import 'package:loading_indicator/loading_indicator.dart';
@@ -18,7 +18,6 @@ import 'package:tuple/tuple.dart';
 import '../../domain/model/location.dart';
 import '../../domain/model/user.dart';
 import '../../domain/repository/user_repository.dart';
-import '../../env_manager.dart';
 import '../../utils/error.dart';
 import '../../utils/snackbar.dart';
 import '../main_page.dart';
@@ -667,6 +666,7 @@ class _UpdateProfilePageState extends State<UpdateProfilePage>
   }
 
   void searchLocation() async {
+    /* //GoogleMapsPlaces
     try {
       final apiKey = EnvManager.shared.get(EnvKey.PLACES_API_KEY);
 
@@ -701,6 +701,7 @@ class _UpdateProfilePageState extends State<UpdateProfilePage>
     } catch (e, s) {
       print('searchLocation $e $s');
     }
+    */
   }
 
   Widget buildGender() {

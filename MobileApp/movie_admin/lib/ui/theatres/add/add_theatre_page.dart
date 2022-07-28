@@ -2,14 +2,13 @@ import 'dart:io';
 
 import 'package:built_collection/built_collection.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_google_places/flutter_google_places.dart';
+// import 'package:flutter_google_places/flutter_google_places.dart';
 import 'package:flutter_provider/flutter_provider.dart';
-import 'package:google_maps_webservice/places.dart' hide Location;
+// import 'package:google_maps_webservice/places.dart' hide Location;
 import 'package:image_picker/image_picker.dart';
 
 import '../../../domain/model/location.dart';
 import '../../../domain/repository/theatres_repository.dart';
-import '../../../env_manager.dart';
 import '../../../ui/theatres/add/seats_page.dart';
 import '../../../ui/theatres/seat.dart';
 import '../../../utils/utils.dart';
@@ -345,6 +344,7 @@ class _AddTheatrePageState extends State<AddTheatrePage> {
   }
 
   void searchLocation() async {
+    /* //GoogleMapsPlaces
     try {
       final apiKey = EnvManager.shared.get(EnvKey.PLACES_API_KEY);
 
@@ -379,6 +379,7 @@ class _AddTheatrePageState extends State<AddTheatrePage> {
     } catch (e, s) {
       print('searchLocation $e $s');
     }
+    */
   }
 
   void submit(BuildContext context) async {

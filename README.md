@@ -59,11 +59,23 @@ project
 -   Setup and run
     -   Backend (**You can use my url: https://datn-081098.herokuapp.com/**)
         -	Install [Node.js](https://nodejs.org/en/download/), [NestJS](https://docs.nestjs.com/)
-        -	Install [MongoDB](https://docs.mongodb.com/manual/installation/), [Neo4j](https://neo4j.com/docs/operations-manual/current/installation/windows/)
-        -	Create [Stripe secret API key](https://stripe.com/docs/keys), Create [MovieDb api key](https://www.themoviedb.org/settings/api)
-        -   Create MongoDB database, (eg. `movieDb`), and create Neo4j database.
-        -   Start MongoDB and Neo4j.
-        -   Create .env file `./Backend/main/.env` has following structure:
+        -	Install [MongoDB](https://docs.mongodb.com/manual/installation/), [Neo4j](https://neo4j.com/docs/operations-manual/current/installation/windows/
+      
+      $ brew tap mongodb/brew
+       $ brew install mongodb-community@5.0
+       $ brew install neo4j
+       brew services start mongodb-community@5.0
+       brew services stop mongodb-community@5.0
+       brew services restart neo4j
+       
+    https://neo4j.com/docs/operations-manual/4.4/installation/osx/)
+    
+    -	Create [Stripe secret API key](https://stripe.com/docs/keys), Create [MovieDb api key](https://www.themoviedb.org/settings/api)
+    -   Create MongoDB database, (eg. `movieDb`), and create Neo4j database.
+    -   Start MongoDB and Neo4j.
+    -   Create .env file `./Backend/main/.env` has following structure:
+        
+        
             ```bash
             MONGODB_URL=mongodb://localhost:27017/movieDb
             MOVIE_DB_API_KEY=movie_db_api_key
